@@ -5,58 +5,58 @@ import type { Truck, Driver, Trip, Customer, Goods } from "./types"
 
 
 
-export function getDrivers(): Driver[] {
-  return [
-    {
-      id: "D-001",
-      name: "John Doe",
-      status: "on_duty",
-      assignedTruckId: "T-101",
-    },
-    {
-      id: "D-002",
-      name: "Jane Smith",
-      status: "on_duty",
-      assignedTruckId: "T-103",
-    },
-    {
-      id: "D-003",
-      name: "Mike Johnson",
-      status: "on_duty",
-      assignedTruckId: "T-105",
-    },
-    {
-      id: "D-004",
-      name: "Sarah Williams",
-      status: "on_duty",
-      assignedTruckId: "T-106",
-    },
-    {
-      id: "D-005",
-      name: "Robert Brown",
-      status: "on_duty",
-      assignedTruckId: "T-108",
-    },
-    {
-      id: "D-006",
-      name: "Emily Davis",
-      status: "off_duty",
-      assignedTruckId: null,
-    },
-    {
-      id: "D-007",
-      name: "David Miller",
-      status: "off_duty",
-      assignedTruckId: null,
-    },
-    {
-      id: "D-008",
-      name: "Lisa Wilson",
-      status: "on_leave",
-      assignedTruckId: null,
-    },
-  ]
-}
+// export function getDrivers(): Driver[] {
+//   return [
+//     {
+//       id: "D-001",
+//       name: "John Doe",
+//       status: "on_duty",
+//       assignedTruckId: "T-101",
+//     },
+//     {
+//       id: "D-002",
+//       name: "Jane Smith",
+//       status: "on_duty",
+//       assignedTruckId: "T-103",
+//     },
+//     {
+//       id: "D-003",
+//       name: "Mike Johnson",
+//       status: "on_duty",
+//       assignedTruckId: "T-105",
+//     },
+//     {
+//       id: "D-004",
+//       name: "Sarah Williams",
+//       status: "on_duty",
+//       assignedTruckId: "T-106",
+//     },
+//     {
+//       id: "D-005",
+//       name: "Robert Brown",
+//       status: "on_duty",
+//       assignedTruckId: "T-108",
+//     },
+//     {
+//       id: "D-006",
+//       name: "Emily Davis",
+//       status: "off_duty",
+//       assignedTruckId: null,
+//     },
+//     {
+//       id: "D-007",
+//       name: "David Miller",
+//       status: "off_duty",
+//       assignedTruckId: null,
+//     },
+//     {
+//       id: "D-008",
+//       name: "Lisa Wilson",
+//       status: "on_leave",
+//       assignedTruckId: null,
+//     },
+//   ]
+// }
 
 export function getCustomers(): Customer[] {
   return [
@@ -287,7 +287,7 @@ export function getGoodsById(goodsId: string): Goods | undefined {
 //   return trucks.find((truck) => truck.id === truckId)
 // }
 
-export function getDriverById(driverId: string): Driver | undefined {
-  const drivers = getDrivers()
-  return drivers.find((driver) => driver.id === driverId)
-}
+// export function getDriverById(driverId: string): Driver | undefined {
+//   const drivers = getDrivers()
+//   return drivers.find((driver) => driver.id === driverId)
+// }

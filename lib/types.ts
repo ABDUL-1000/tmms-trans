@@ -13,13 +13,15 @@ export interface Route {
 export interface Truck {
   id: string
   name: string
- movement_status: "pending" | "moving" | "delivered" 
-  driverId: string | null
-location: {
+  description?: string  // Add this
+  truck_number?: string  // Add this
+   movement_status: MovementStatus
+  driver_id: string | null  // Changed from driverId to match API
+  location?: {
     latitude: number
     longitude: number
   }
-  destination: {
+  destination?: {
     latitude: number
     longitude: number
   }
@@ -28,18 +30,19 @@ location: {
     destinationName: string
   }
   lastUpdated?: Date
-
-   
   quantity: number
   compartment: number
-  status: "pending" | "moving" | "delivered" 
-
-
-
-  calibrate_one?: number // Add this line
-  calibrate_two?: number // Add this line
-  calibrate_three?: number // Add this line
+   status: TruckStatus
+  calibrate_one?: number
+  calibrate_two?: number
+  calibrate_three?: number
+  added_by?: number
+  transporter_id?: number
+  created_at?: string
+  updated_at?: string
 }
+export type TruckStatus = "pending" | "moving" | "delivered" | "maintenance" | "idle"
+export type MovementStatus = "pending" | "moving" | "delivered"
 
 export interface Driver {
   id: string
