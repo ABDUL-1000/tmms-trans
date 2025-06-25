@@ -3,7 +3,7 @@ import axios from "axios";
 console.log("API Base URL:", process.env.NEXT_PUBLIC_API_URL);
 
 const api = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_URL,
+  baseURL: 'https://test.tmmmsapp.com/api/',
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
